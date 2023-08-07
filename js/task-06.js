@@ -8,7 +8,7 @@ inputValid.addEventListener('blur', handlerOn);
 
 function handlerOn(evt) {
     if (evt.currentTarget.value.length === Number(inputValid.dataset.length)) {
-      
+        inputValid.classList.remove('invalid');
         inputValid.classList.add('valid');
       
     } else {
